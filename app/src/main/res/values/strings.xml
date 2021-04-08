@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Consulta</string>
+    <string name="editnome">Nome</string>
+    <string name="editcpf">Cpf</string>
+    <string name="editrg">Rg</string>
+    <string name="editcell">Telefone</string>
+    <string name="button">Confirmar</string>
 </resources>
