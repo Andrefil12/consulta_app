@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.widget.doAfterTextChanged
 import kotlinx.android.synthetic.main.activity_main.*
+import main.classes.`class`.Armazem
+import main.classes.`class`.BdDados
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,27 +15,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun inputData(){
-
-        inpNome?.doAfterTextChanged {text ->
-            val nome = text.toString()
+        botao.setOnClickListener {
+            callClass(
+                inpNome.text.toString(),
+                inpCpf.text.toString(),
+                inpRg.text.toString(),
+                inpCell.text.toString()
+            )
         }
-
-        inpCpf?.doAfterTextChanged { text ->
-            val cpf = text.toString()
-        }
-
-        inpRg?.doAfterTextChanged { text ->
-            val rg = text.toString()
-        }
-
-        inpCell?.doAfterTextChanged { text ->
-            val cell = text.toString()
-        }
-
 
     }
 
     private fun callClass(nome: String, cpf: String, rg: String, cell: String){
+        val bd = BdDados(nome,cpf,rg,cell)
+        val armazena = Armazem(bd)
 
     }
 }
