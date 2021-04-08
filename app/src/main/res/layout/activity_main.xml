@@ -17,7 +17,7 @@
         style="@style/input_style" />
 
     <EditText
-        android:id="@+id/ipCpf"
+        android:id="@+id/inpCpf"
         android:hint="@string/editcpf"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         style="@style/input_style"/>
 
     <EditText
-        android:id="@+id/ipRg"
+        android:id="@+id/inpRg"
         android:hint="@string/editrg"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
         style="@style/input_style"/>
 
     <EditText
-        android:id="@+id/ipCell"
+        android:id="@+id/inpCell"
         android:hint="@string/editcell"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
