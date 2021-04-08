@@ -8,56 +8,50 @@
 
     <EditText
         android:id="@+id/inpNome"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
         android:hint="@string/editnome"
-        android:textAlignment="center"
-        android:textSize="16sp"
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/guideTop"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/input_style" />
 
     <EditText
         android:id="@+id/ipCpf"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
         android:hint="@string/editcpf"
-        android:textAlignment="center"
-        android:textSize="16sp"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/guideMediumUp"
-        app:layout_constraintTop_toTopOf="@id/guideTop" />
+        app:layout_constraintTop_toTopOf="@id/guideTop"
+        style="@style/input_style"/>
 
     <EditText
         android:id="@+id/ipRg"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
         android:hint="@string/editrg"
-        android:textAlignment="center"
-        android:textSize="16sp"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/guideMediumDown"
-        app:layout_constraintTop_toTopOf="@id/guideMediumUp"/>
+        app:layout_constraintTop_toTopOf="@id/guideMediumUp"
+        style="@style/input_style"/>
 
     <EditText
         android:id="@+id/ipCell"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
         android:hint="@string/editcell"
-        android:textAlignment="center"
-        android:textSize="16sp"
+        android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/guideBottom"
-        app:layout_constraintTop_toTopOf="@id/guideMediumDown"/>
+        app:layout_constraintTop_toTopOf="@id/guideMediumDown"
+        style="@style/input_style" />
 
     <Button
         android:id="@+id/botao"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingHorizontal="70dp"
+        android:paddingVertical="15dp"
         android:text="@string/button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
