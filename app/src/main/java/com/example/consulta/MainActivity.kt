@@ -1,8 +1,8 @@
 package com.example.consulta
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.widget.doAfterTextChanged
 import kotlinx.android.synthetic.main.activity_main.*
 import main.classes.`class`.Armazem
 import main.classes.`class`.BdDados
@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
                 inpRg.text.toString(),
                 inpCell.text.toString()
             )
+            val intent = Intent(this, ConsultActivity::class.java)
+            startActivity(intent)
         }
 
     }
@@ -29,6 +31,6 @@ class MainActivity : AppCompatActivity() {
     private fun callClass(nome: String, cpf: String, rg: String, cell: String){
         val bd = BdDados(nome,cpf,rg,cell)
         val armazena = Armazem(bd)
-
     }
+
 }
