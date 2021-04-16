@@ -1,4 +1,4 @@
-package main.classes.`class`
+package com.example.consulta.model
 
 class BdDados(val nome: String, val cpf: String, val rg: String, val cell: String) {
 

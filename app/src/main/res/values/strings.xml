@@ -5,4 +5,5 @@
     <string name="editrg">Rg</string>
     <string name="editcell">Telefone</string>
     <string name="button">Confirmar</string>
+    <string name="consulta">CPF</string>
 </resources>

@@ -19,7 +19,7 @@
     <EditText
         android:id="@+id/inpCpf"
         android:hint="@string/editcpf"
-        android:inputType="numberDecimal"
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/guideMediumUp"
@@ -29,7 +29,7 @@
     <EditText
         android:id="@+id/inpRg"
         android:hint="@string/editrg"
-        android:inputType="numberDecimal"
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/guideMediumDown"
